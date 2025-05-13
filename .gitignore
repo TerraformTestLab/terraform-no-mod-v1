@@ -37,3 +37,4 @@ override.tf.json
 terraform.rc
 !vcs.auto.tfvars
 api-driven-workflow
+.DS_Store
