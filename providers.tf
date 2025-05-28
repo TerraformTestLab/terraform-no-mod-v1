@@ -1,28 +1,4 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-    random = {
-      source  = "hashicorp/random"
-      version = "~> 3.0"
-    }
-  }
-
-  cloud {
-    organization = "sujay-test-01"
-    workspaces {
-      tags = {
-        github-repo = "terraform-no-mod-v1"
-      }
-    }
-  }
-
-
-  required_version = ">= 1.11.0"
-}
-
+# Required providers configuration
 provider "aws" {
   region = var.aws_region
 }
